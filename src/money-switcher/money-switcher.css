@@ -1,0 +1,17 @@
+.currentCourse{
+    padding: 10px 20px 10px 20px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    cursor: pointer;
+}
+ 
+.currentCourse:hover {
+    background-color: #EEEEEE;
+}
+
+.currentCourse:nth-child(1){
+    padding-top: 10px;
+}

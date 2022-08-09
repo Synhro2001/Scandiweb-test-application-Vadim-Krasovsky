@@ -1,0 +1,172 @@
+#cart-item-flex-list {
+    flex-direction: column;
+}
+
+.cart-item-box-list {
+    padding-bottom: 50px;
+    position: relative;
+    display: flex;
+}
+
+.make-line {
+    position: absolute;
+    width: 1240px;
+    height: 1px;
+    top: 255px;
+    left: 100px;
+    color: #E5E5E5;
+    
+} 
+
+.cart-items-name {
+    position: absolute;
+    height: 27px;
+    left: 101px;
+    top: 280px;
+}
+
+.cart-items-name p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 27px;
+ 
+}
+
+.cart-items-price {
+    position: absolute;
+    height: 24px;
+    left: 100px;
+    top: 320px;
+}
+
+.cart-items-price p {
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.cart-items-attribute {
+    position: absolute;
+    width: 276px;
+    height: 70px;
+    left: 100px;
+    top: 350px;
+}
+
+.cart-attribute-name {
+    margin-top: 8px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.cart-attribute-filter {
+    display: flex;
+    flex-direction: row;
+    margin-top: 8px;
+
+}
+
+.cart-button-style {
+    border: 1px solid #1D1F22;
+    margin-right: 8px;
+    cursor:pointer;
+    overflow: hidden;
+    width: 63px;
+    height: 45px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    z-index: 99;
+}
+
+.cart-button-style:hover {
+    z-index: 99;
+    color: #FFFFFF;
+    background: black;
+}
+
+.cart-button-style p {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.cart-items-counter {
+    position: relative;
+    width: 45px;
+    height: 288px;
+    left: 1071px;
+    top: 280px;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.cart-items-plus {
+    position: relative;
+
+}
+
+.cart-items-minus {
+    position: relative;
+    z-index: 99;
+}
+
+.items-counter {
+    position: absolute;
+    right: 40%;
+    bottom: 45%;
+}
+
+.items-style {
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 160%;
+}
+
+.cart-items-photo {
+    position: absolute;
+    left: 79.17%;
+    right: 6.94%;
+    top: 280px;
+    bottom: 59.28%;
+}
+
+.photoMake { 
+      
+    width: 200px;
+    height: 288px;
+    object-fit: contain;
+}
+
+.cart-items-arrows { 
+
+    position: relative;
+    width: 56px;
+    height: 24px;
+    left: 130px;
+    bottom: 32px;
+    z-index: 99;
+}
+
+.rightArrows {
+    position: relative;
+    left: 8px
+}
+

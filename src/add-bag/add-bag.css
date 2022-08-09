@@ -1,0 +1,124 @@
+
+.item-box {
+    width: 293px;
+    height: 190px;
+    display: flex;
+    position: relative;
+    margin-bottom: 40px; /* must to be 40px*/
+    overflow: auto;
+}
+
+#flx-dir {
+    flex-direction: column;
+}
+
+.item-param{
+    width: 136px;
+    height: 190px;
+    position: absolute;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.attribute-name {
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 8px;
+}
+
+.name-and-price {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 160%;
+}
+
+.attribute-cointaner-box {
+    padding-top: 8px;
+    width: 120px;
+    height: 48px;
+}
+
+.attribute-filter {
+    display: flex;
+    flex-direction: row;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 8px;
+}
+
+.button-style {   
+    border: 1px solid #1D1F22;
+    margin-left: 5px;
+    cursor:pointer;
+    position: relative;
+    overflow: hidden;
+    max-height: 20px;
+    min-width: 20px;
+    text-align: center;
+  
+
+}
+
+.button-style:hover {
+    
+    color: #FFFFFF;
+    background: black;
+}
+
+.button-style p{
+    
+   
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    
+}
+
+.total-price {
+    margin-top: 32px;
+    width: 289px;
+    height: 28px;
+}
+
+
+.add-or-delete {
+    height: 190px;
+    bottom: 0px;
+    right: 129px;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.photo-box { 
+    position: relative;
+}
+
+
+.imagine {
+    object-fit: cover;
+    position: absolute;
+    bottom: 1px;
+    right: 0px;
+    width: 121px;
+    height: 190px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+

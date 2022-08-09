@@ -1,0 +1,94 @@
+.card-style {
+    width: 386px;
+    height: auto;
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 16px;
+    
+}
+
+.card-style:hover {
+    box-shadow: 0px 4px 11px rgba(29, 31, 34, 0.1);
+    
+}
+
+.make-gallery{  
+    width: 354px;
+    height: 330px;
+    object-fit: contain;
+     
+}
+
+.shop-logo {
+    width: 52px;
+    height: 52px;
+    margin-left: 302px;
+    margin-top: -26px;
+    opacity: 0;
+    cursor: pointer;
+  
+}
+
+.card-style:hover .shop-logo{
+    opacity: 1;
+}
+
+.card-style.out-of-stock .out-of-stock-text{
+    opacity: 1; 
+}
+
+.card-style.out-of-stock .shop-logo{
+    opacity: 0;
+    cursor: default;
+}
+
+.out-of-stock-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+
+    color: #8D8F9A;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 160%;
+}
+
+.card-style.out-of-stock {
+    opacity: 0.5;
+}
+
+.card-style:nth-child(3n + 1){
+    margin-left: 100px;
+}
+
+.photo-container {
+    position: relative;
+}
+
+.descriptionCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    width: 354px;
+    height: 58px;
+}
+
+.descriptionCard p {
+    width: 354px;
+    height: 29px;
+    color: #1D1F22;
+    font-family: 'Raleway';
+}
+

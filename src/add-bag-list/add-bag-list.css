@@ -1,0 +1,143 @@
+.add-bag-list {
+    position: fixed;
+    width: 325px;
+    height: 650px;
+    margin-left: 1043px;
+    z-index: 97;
+    background-color: white;
+    padding: 32px 16px;
+    overflow: auto;
+}
+
+
+#flx {
+
+    flex-direction: column;
+}
+
+.bag-list {
+    display:flex
+}
+
+.add-bag {
+
+    padding: 0px;
+    width: 293px;
+    min-height: 538px;
+}
+
+.bag-head {
+    width: 130px;
+    height: 26px;
+    text-align: left;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    margin-bottom: 32px;
+
+    
+}
+
+.inf-item-bag {
+    display: grid;
+  
+    margin: 0 auto;
+    margin-bottom: 40px;
+    position: absolute;
+}
+
+.makeButton {
+    position: absolute;
+}
+
+.view-bag-check-out {
+    width: 292px;
+    height: 43px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 12px;
+
+}
+
+.view-bag {
+    width: 140px;
+    height: 43px;
+    gap: 10px;
+    color: #1D1F22;
+    background: #FFFFFF;
+    border: 1px solid #1D1F22;
+}
+
+.view-bag p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.check-out {
+    width: 140px;
+    height: 43px;
+    gap: 10px;
+    color: #1D1F22;
+    background: #FFFFFF;
+    border: 1px solid #1D1F22;
+}
+
+.check-out p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+ 
+.view-bag:hover {
+    background: #5ECE7B;
+    color: #FFFFFF;
+}
+
+.check-out:hover {
+    background: #5ECE7B;
+    color: #FFFFFF;
+}
+
+.total-price-box {
+    display: flex;
+    width: 289px;
+    height: 28px;
+    position: relative;
+    margin-bottom: 32px;
+}
+/* add new font Roboto */
+.total-price-box p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.total {
+    width: 55px;
+    height: 19px;
+    text-align: right;
+}
+
+.price {
+    width: 95px;
+    height: 26px;
+    margin-left: 132px;
+    text-align: right;
+}
+

@@ -1,0 +1,195 @@
+.product-description-page {
+    position: relative;
+    margin-top: 80px;
+    width: 1440px;
+    height: 853px;
+  
+}
+
+.product-description-box {
+    position: absolute;
+    width: 1002px;
+    height: 595px;
+    left: 219px;
+    top: 80px;
+   
+}
+
+.several-picture-box {
+    position: relative;
+    width: 79px;
+    height: auto;
+    left: 100px;
+    top: 80px;
+    margin-bottom: 40px
+    
+}
+
+.picture-size {
+    width: 80px;
+    height: 79px;
+    object-fit: contain;
+}
+
+.product-picture {
+    position: absolute;
+    width: 610px;
+    height: 511px;
+    left: 0px;
+}
+
+.picture {
+    width: 610px;
+    height: 511px;
+    object-fit: contain;
+    left: 0px;
+}
+
+.pdp-items-box {
+    position: relative;
+    width: 292px;
+    height: 595px;
+    left: 710px;
+}
+
+.pdp-items-name {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 70px;
+    width: 292px;
+    display: flex;
+    align-items: center;
+}
+
+.pdp-items-name p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 27px;
+}
+
+/* PDP Attribute style */
+
+.pdp-items-attribute {
+    position: relative;
+    height: auto;
+    width: 292px;
+    left: 0px;
+
+}
+.pdp-attribute-name {
+    margin-top: 8px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.pdp-attribute-filter {
+    display: flex;
+    flex-direction: row;
+    margin-top: 8px;
+
+}
+
+.pdp-button-style {
+    border: 1px solid #1D1F22;
+    margin-right: 8px;
+    cursor:pointer;
+    overflow: hidden;
+    width: 63px;
+    height: 45px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    z-index: 96;
+}
+
+.pdp-button-style:hover {
+    z-index: 96;
+    color: #FFFFFF;
+    background: black;
+}
+
+.pdp-button-style p {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+/* PDP Attribute style */
+
+.pdp-prices {
+    position: relative;
+    margin-top: 36px;
+    height: auto;
+    width: 292px;
+    left: 0px
+}
+
+.prices {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+
+ 
+}
+
+.pdp-item-price {
+    position: relative;
+    margin-top: 10px;
+    width: 86px;
+    height: 46px
+}
+
+
+.pdp-item-price p{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 18px;
+}
+
+.pdp-add-to-card {
+    position: relative;
+    width: 292px;
+    height: 52px;
+    margin-top: 76px;
+}
+
+.add-to-card-btn {
+    width: 292px;
+    height: 52px;
+    color: #FFFFFF;
+    background: #5ECE7B;
+    border: 1px solid #FFFFFF;
+}
+
+.add-to-card-btn p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.product-description {
+    position: relative;
+    width: 292px;
+    height: 103px;
+    margin-top: 40px;
+    left: 0;
+
+}
+
+
+
+

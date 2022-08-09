@@ -1,0 +1,10 @@
+.money-switcher {
+    position: fixed;    
+    width: 114px;
+    height: 169px;
+    margin-left: 1248px;
+    margin-bottom: 1279px;
+    text-align: center;
+    z-index: 99;
+
+}

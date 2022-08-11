@@ -6,7 +6,6 @@ import './product-listing-page.css';
 
 class ProductListingPage  extends Component {
 
-
     render(){
         const {neededCategoryWithCurr, onAddProductToBag,neededCategory,
         filter, onPDPswitcher} = this.props;
@@ -18,17 +17,16 @@ class ProductListingPage  extends Component {
         const elements = neededCategory[0].products.map((item, i) => {
             const {id, ...itemProps} = item;
             return(
-                    <ProductListingCard
-                        index = {i}
-                        key = {item.id}
-                        {...itemProps}
-                        neededCategoryWithCurr = {neededCategoryWithCurr}
-                        neededAmount = {neededAmount}
-                        onAddProductToBag = {() => onAddProductToBag(id)}
-                        onPDPswitcher = {() => onPDPswitcher(id)}
-                       
-                    />       
-
+                <ProductListingCard
+                    index = {i}
+                    key = {item.id}
+                    {...itemProps}
+                    neededCategoryWithCurr = {neededCategoryWithCurr}
+                    neededAmount = {neededAmount}
+                    onAddProductToBag = {() => onAddProductToBag(id)}
+                    onPDPswitcher = {() => onPDPswitcher(id)}
+                    
+                />       
             )
         })
 

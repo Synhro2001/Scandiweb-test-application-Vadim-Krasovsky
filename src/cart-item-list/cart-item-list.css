@@ -15,7 +15,6 @@
     top: 255px;
     left: 100px;
     color: #E5E5E5;
-    
 } 
 
 .cart-items-name {
@@ -31,7 +30,6 @@
     font-weight: 400;
     font-size: 30px;
     line-height: 27px;
- 
 }
 
 .cart-items-price {
@@ -42,7 +40,6 @@
 }
 
 .cart-items-price p {
-    
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -71,7 +68,6 @@
     display: flex;
     flex-direction: row;
     margin-top: 8px;
-
 }
 
 .cart-button-style {
@@ -112,12 +108,10 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .cart-items-plus {
     position: relative;
-
 }
 
 .cart-items-minus {
@@ -132,7 +126,6 @@
 }
 
 .items-style {
-    
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 500;
@@ -149,14 +142,12 @@
 }
 
 .photoMake { 
-      
     width: 200px;
     height: 288px;
     object-fit: contain;
 }
 
 .cart-items-arrows { 
-
     position: relative;
     width: 56px;
     height: 24px;
@@ -169,4 +160,3 @@
     position: relative;
     left: 8px
 }
-

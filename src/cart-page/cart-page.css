@@ -9,9 +9,7 @@
     overflow: auto;
 }
 
-
 #flx {
-
     flex-direction: column;
 }
 
@@ -20,7 +18,6 @@
 }
 
 .add-bag {
-
     padding: 0px;
     width: 293px;
     min-height: 538px;
@@ -35,14 +32,11 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 160%;
-    margin-bottom: 32px;
-
-    
+    margin-bottom: 32px;  
 }
 
 .inf-item-bag {
     display: grid;
-  
     margin: 0 auto;
     margin-bottom: 40px;
     position: absolute;
@@ -59,7 +53,6 @@
     flex-direction: row;
     align-items: flex-start;
     gap: 12px;
-
 }
 
 .view-bag {

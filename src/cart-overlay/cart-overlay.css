@@ -16,15 +16,12 @@
     width: 136px;
     height: 190px;
     position: absolute;
-    
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
 }
 
 .attribute-name {
-    
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
@@ -64,25 +61,19 @@
     max-height: 20px;
     min-width: 20px;
     text-align: center;
-  
-
 }
 
 .button-style:hover {
-    
     color: #FFFFFF;
     background: black;
 }
 
 .button-style p{
-    
-   
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 160%;
-    
 }
 
 .total-price {
@@ -101,13 +92,11 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .photo-box { 
     position: relative;
 }
-
 
 .imagine {
     object-fit: cover;
@@ -119,6 +108,3 @@
     display: flex;
     flex-wrap: wrap;
 }
-
-
-

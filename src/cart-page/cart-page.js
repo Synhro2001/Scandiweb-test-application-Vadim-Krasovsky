@@ -8,7 +8,6 @@ class CartPage extends Component {
     render() {
         const {bagItems, neededCategoryWithCurr, productsInBag, currentSymbol, onCardSwitcher} = this.props
         
-
         const productsTotalCosts = bagItems.map(item => {
 
             const product = productsInBag.filter(elem => elem.id === item.id);
@@ -32,8 +31,6 @@ class CartPage extends Component {
         }, 0)).toFixed(2);
         // console.log("totalCost: ", totalCost);
 
-
-      
         // const totalPrice = bagItems.reduce((accumulator, currentValue) => {
 
         //     return parseFloat(accumulator + currentValue.prices.find(item => 
@@ -61,15 +58,11 @@ class CartPage extends Component {
             )
         })
         
-        
-        
         return (
             <div className="add-bag-list">
                 <div  className="add-bag">
                     <p className="bag-head">My bag, {this.props.sumProduct + ' items'}  </p> 
-                    <div className="bag-list" id = "flx"> {elements} </div>
-                  
-                   
+                    <div className="bag-list" id = "flx"> {elements} </div>   
                 </div>
                 <div className="total-price-box">
                     <div className="total">

@@ -15,7 +15,6 @@ class ProductDescriptionPage extends Component {
             )
         })
    
-
         const pdpAttributesItem = pdpAttributes.map((attribute) => {
             return (
                 <div key={attribute.id}>
@@ -48,7 +47,6 @@ class ProductDescriptionPage extends Component {
             )
         })
 
-
         return (
             <div className="product-description-page">
                 {pdpGalleryItem}
@@ -78,8 +76,7 @@ class ProductDescriptionPage extends Component {
                         <div className="product-description"
                         dangerouslySetInnerHTML = {{__html: pdpItems[0].description}}>
                             
-                        </div>
-                        
+                        </div>   
 
                     </div>
 
@@ -89,4 +86,4 @@ class ProductDescriptionPage extends Component {
     }
 }
 
-export default ProductDescriptionPage
+export default ProductDescriptionPage;

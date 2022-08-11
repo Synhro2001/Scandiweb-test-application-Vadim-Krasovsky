@@ -5,14 +5,11 @@ import './cart-overlay.css'
 import minusLogo from './image/minus.png'
 import plusLogo from './image/plus.png'
 
-
-
 class CartOverlay extends Component {
     render () {
         const {name, gallery, neededCategoryWithCurr,
         attributes, productsInBag, productId} = this.props
        
-        
         const currentSymbol = neededCategoryWithCurr[0].prices[0].currency.symbol;
         
         const curProductCount = productsInBag[productsInBag.findIndex(elem => elem.id === productId)].count;
@@ -53,18 +50,17 @@ class CartOverlay extends Component {
         <div id = 'flx-dir' className="item-box">
             <div className="item-param">
                 <div className="name-and-price">
-                <p> {name} <br>
-
-                </br>
+                <p> 
+                {name}
+                    <br></br>
                 {currentSymbol}
                 {this.props.productPrice}
-                {/* {prices.find((item) => 
-                item.currency.symbol === currentSymbol).amount} */}
-                    </p>
+                {/* {prices.find((item) => item.currency.symbol === currentSymbol).amount} */}
+                </p>
                 </div>
                 <div className="attribute-cointaner-box">
 
-                    {attributeItem}
+                {attributeItem}
 
                 </div>
      
@@ -72,21 +68,21 @@ class CartOverlay extends Component {
             
             <div className="add-or-delete">
                 <a href='#!'><img src={plusLogo} 
-                        alt="plusLogo" 
-                        className='plus-logo'
-                        onClick={this.props.onAddProductToBag}
+                    alt="plusLogo" 
+                    className='plus-logo'
+                    onClick={this.props.onAddProductToBag}
                 /></a>
                 <p> {curProductCount}</p>
                 <a href='#!'><img src={minusLogo} 
-                        alt="minusLogo" 
-                        className='minus-logo'
-                        onClick={this.props.onDeleteProductFromBag}
+                    alt="minusLogo" 
+                    className='minus-logo'
+                    onClick={this.props.onDeleteProductFromBag}
                 /></a>
             </div>
             <div className="photo-box">
                 <a href='#!'><img src={gallery[0]} 
-                        alt="gallery" 
-                        className='imagine'/>
+                    alt="gallery" 
+                    className='imagine'/>
                 </a>
              
             </div>

@@ -4,7 +4,6 @@
     height: 1800px;
     z-index: 98;
     background: #FFFFFF;
-
 }
 
 .cart-name {
@@ -12,8 +11,7 @@
     width: 84px;
     height: 40px;
     left: 100px;
-    top: 160px;
-    
+    top: 160px;  
 }
 
 .cart-name p {
@@ -25,14 +23,12 @@
     text-transform: uppercase;
 }
 
-
 .cart-item-result-box{
     position: relative;
     width: 279px;
     height: 159px;
     margin-left: 100px;
     margin-top: 300px;
-   
 }
 
 .cart-item-order {
@@ -42,7 +38,6 @@
     color: white;
     border: 1px solid white;
     background: #5ECE7B;
-   
 }
 
 .tax-sum{
@@ -72,7 +67,6 @@
 }
 
 .price-sum {       
-    
     height: 28px;
 }
 
@@ -83,7 +77,5 @@
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 28px;
-    
+    line-height: 28px; 
 }
-

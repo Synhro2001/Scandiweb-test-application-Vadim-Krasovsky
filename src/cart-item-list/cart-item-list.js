@@ -8,13 +8,10 @@ import minusItems from './image/minusItems.png'
 import leftArrows from './image/leftArrows.png'
 import rightArrows from './image/rightArrows.png'
 
-
-
 class CartItemList extends Component {
     state = {
         currentPicture: 0    
     }
-
 
     onRightSlide (length) {
         if(this.state.currentPicture === length - 1){
@@ -130,7 +127,6 @@ class CartItemList extends Component {
                 <hr className="make-line-down"/>
 
             </div>
-           
             
         )
     }

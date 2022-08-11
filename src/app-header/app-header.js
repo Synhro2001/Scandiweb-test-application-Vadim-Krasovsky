@@ -13,15 +13,12 @@ class AppHeader extends Component {
         window.location.assign('http://localhost:3000/');
     }
 
-
     render(){
         const {categoryNames, onFilterSelect, 
              onLogoSwitcher,onBagSwitcher, 
              switcher, sumProduct} = this.props;
         
         const logo = switcher ? currencyUp : currencyDown;
-
-        
 
         return (
             <header className="app-header">

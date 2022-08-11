@@ -4,7 +4,6 @@ import MoneySwitcher from "../money-switcher/money-switcher";
 
 import './money-switcher-list.css'
 
-
 class MoneySwitcherList extends Component {
     render() {
         const {currencyNames, onCurrencySelect} = this.props;
@@ -14,7 +13,6 @@ class MoneySwitcherList extends Component {
                     currencyNames = {currencyNames}
                     onCurrencySelect = {onCurrencySelect}
                     
-
                 />
             </div>
         )
@@ -22,6 +20,5 @@ class MoneySwitcherList extends Component {
     }
 
 }
-
 
 export default MoneySwitcherList;

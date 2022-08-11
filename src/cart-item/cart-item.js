@@ -17,13 +17,10 @@ class CartItem extends Component {
             // console.log("productCost: ", productCost);
             const productTotalCost = productCost * product[0].count;
 
-            
             return {
                 id: product[0].id,
                 totalPrice: parseFloat(productTotalCost).toFixed(2)
             };
-
-            
 
         });
 
@@ -57,7 +54,6 @@ class CartItem extends Component {
 
                 />
                 
-           
             )
         })
 

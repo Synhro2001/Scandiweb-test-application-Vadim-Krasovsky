@@ -1,13 +1,13 @@
 import { Component } from "react";
 
-import './add-bag.css'
+import './cart-overlay.css'
 
 import minusLogo from './image/minus.png'
 import plusLogo from './image/plus.png'
 
 
 
-class AddBag extends Component {
+class CartOverlay extends Component {
     render () {
         const {name, gallery, neededCategoryWithCurr,
         attributes, productsInBag, productId} = this.props
@@ -97,4 +97,4 @@ class AddBag extends Component {
     }
 }
 
-export default AddBag
+export default CartOverlay

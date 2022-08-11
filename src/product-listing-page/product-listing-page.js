@@ -1,10 +1,10 @@
 import { Component } from "react";
 
-import AppCard from "../app-card/app-card";
+import ProductListingCard from "../product-listing-card/product-listing-card";
 
-import './add-card-list.css';
+import './product-listing-page.css';
 
-class AddCardList  extends Component {
+class ProductListingPage  extends Component {
 
 
     render(){
@@ -18,7 +18,7 @@ class AddCardList  extends Component {
         const elements = neededCategory[0].products.map((item, i) => {
             const {id, ...itemProps} = item;
             return(
-                    <AppCard
+                    <ProductListingCard
                         index = {i}
                         key = {item.id}
                         {...itemProps}
@@ -48,7 +48,7 @@ class AddCardList  extends Component {
     
 }
 
-export default AddCardList;
+export default ProductListingPage;
 
 
 

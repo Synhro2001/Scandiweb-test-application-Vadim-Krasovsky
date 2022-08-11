@@ -1,17 +1,12 @@
 import { Component } from 'react';
 
-import './app-card.css';
-import shopLogo from './shop-logo/shop-logo.png'
+import './product-listing-card.css';
 
+import shopLogo from './shop-logo/shop-logo.png'
 
 //<img url={firstCard} alt="fisrtCard" className='first-card'/>
 
-// probuju sdelatj stilj photo exportiruja photo
-// photo nado bratj s severa ! 
-//after out of stock <img src={shopLogo} alt="shopLogo" className='shop-logo' />
-
-
-class AppCard extends Component {
+class ProductListingCard extends Component {
        
     render(){
     
@@ -47,43 +42,7 @@ class AppCard extends Component {
         )
 
     }
-    
-    
 
 }
 
-export default AppCard;
-
-
-
-/* 
-
-const AppCard = (props) => {
-
-    const {name, gallery, prices} = props; 
-    const {currency} = prices[0];
-  
-    return (
-        <div className='card-style '>
-            <div className="photo-container ">
-            <img src={gallery[0]} alt='gallery' className='make-gallery'/>
-               
-                <p>OUT OF STOCK</p>
-            </div>
-            <div className="descriptionCard">
-                <p>{name}</p> 
-                <p >{currency.symbol}{prices[0].amount}</p>
-            </div>
-               
-
-
-
-                
-        </div>
-
-
-    )
-    
-
-}
-*/
+export default ProductListingCard;

@@ -1,10 +1,10 @@
 import { Component } from "react";
 
-import AddBag from "../add-bag/add-bag";
+import CartOverlay from "../cart-overlay/cart-overlay";
 
-import './add-bag-list.css'
+import './cart-page.css'
 
-class AddBagList extends Component {
+class CartPage extends Component {
     render() {
         const {bagItems, neededCategoryWithCurr, productsInBag, currentSymbol, onCardSwitcher} = this.props
         
@@ -46,7 +46,7 @@ class AddBagList extends Component {
             const {id, ...itemProps} = item;
             return (
                
-                <AddBag  
+                <CartOverlay  
                     index = {i}
                     key = {item.id}
                     productId={id}
@@ -90,4 +90,4 @@ class AddBagList extends Component {
     }
 }
 
-export default AddBagList
+export default CartPage

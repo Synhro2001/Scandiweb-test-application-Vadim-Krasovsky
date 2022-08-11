@@ -1,9 +1,9 @@
 import { Component } from 'react';
 
 import AppHeader from '../app-header/app-header';
-import AddCardList from '../add-card-list/add-card-list';
+import ProductListingPage from '../product-listing-page/product-listing-page';
 import MoneySwitcherList from '../money-switcher-list/money-switcher-list';
-import AddBagList from '../add-bag-list/add-bag-list';
+import CartPage from '../cart-page/cart-page';
 import CartItem from '../cart-item/cart-item';
 import ProductDescriptionPage from '../product-description-page/product-description-page';
 
@@ -21,14 +21,13 @@ class App extends Component{
         switcherPDP: false,
         symbolFilter: '$',
 
-        productsInBagCount: 0, // podschitivaet skok productov dobavleno 
+        productsInBagCount: 0,
         productsInBag: [],
         
         pdpItemID: '',
 
         totalCost: 0,
 
-      
     }
     
     onAddProductToBag = (id) => {
@@ -89,15 +88,9 @@ class App extends Component{
                 switcherPDP: !switcherPDP
             }
             
-            
-           
-           
-            
         })
     }
     
-    
-
     onDeleteProductFromBag = (id) => {
 
         this.setState(({productsInBag, productsInBagCount}) => {
@@ -129,7 +122,6 @@ class App extends Component{
         });
 
     }
-
 
     //componentDidUpdate
 
@@ -166,8 +158,6 @@ class App extends Component{
         })
     }
     
-    
-
     render(){
         
         const {inf: {data}, filter, switcher, symbolFilter,
@@ -180,7 +170,6 @@ class App extends Component{
             accumulator + currentValue.count, 0
         );
         
-
         const neededCategory = data.categories.filter(item => item.name === filter);
    
         const bagItemsMap = data.categories[0].products.map(item => {
@@ -228,8 +217,7 @@ class App extends Component{
         })
 
         // console.log(productPicture)
-
-
+    
         const categoryNames = data.categories.map(item => {
             return {
                 name: item.name
@@ -253,20 +241,20 @@ class App extends Component{
                     null; 
     
         const bagSwitcher = 
-                switcherBag ? 
-                    <AddBagList
-                    sumProduct = {productsInBagCount}
-                    productsInBag = {productsInBag}
-                    bagItems = {bagItems}
-                    neededCategoryWithCurr = {neededCategoryWithCurr}
-                    productsInBagCount={productsInBagCount}
-                    currentSymbol={symbolFilter}
+            switcherBag ? 
+                <CartPage
+                sumProduct = {productsInBagCount}
+                productsInBag = {productsInBag}
+                bagItems = {bagItems}
+                neededCategoryWithCurr = {neededCategoryWithCurr}
+                productsInBagCount={productsInBagCount}
+                currentSymbol={symbolFilter}
 
-                    onAddProductToBag={this.onAddProductToBag}
-                    onDeleteProductFromBag={this.onDeleteProductFromBag}
-                    onCardSwitcher = {this.onCardSwitcher}
-                    />
-                    : null;
+                onAddProductToBag={this.onAddProductToBag}
+                onDeleteProductFromBag={this.onDeleteProductFromBag}
+                onCardSwitcher = {this.onCardSwitcher}
+                />
+                : null;
 
         const viewBagSwitcher = 
             switcherViewBag ? 
@@ -292,7 +280,7 @@ class App extends Component{
                 neededCurr = {neededCategoryWithCurr}
 
                 />
-                : <AddCardList
+                : <ProductListingPage
                 neededCategory = {neededCategory}
                 neededCategoryWithCurr = {neededCategoryWithCurr}
                 filter = {filter}
@@ -300,10 +288,7 @@ class App extends Component{
                 onAddProductToBag = {this.onAddProductToBag}
                 onPDPswitcher = {this.onPDPswitcher}
                 /> 
-                
-
             
-
         return(
             
             <div className="app">
